@@ -1,0 +1,26 @@
+{
+  "name": "rick-react",
+  "version": "1.0.0",
+  "description": "简单版本 react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel ./index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chant-Lee/rick-react.git"
+  },
+  "author": "rick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chant-Lee/rick-react/issues"
+  },
+  "homepage": "https://github.com/Chant-Lee/rick-react#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@babel/preset-env": "^7.10.4"
+  }
+}
