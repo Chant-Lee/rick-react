@@ -1,5 +1,7 @@
 import { createElement } from './ReactElement'
-const RReact = {
+import Component from './Component'
+
+export default {
   createElement,
+  Component,
 }
-export default RReact

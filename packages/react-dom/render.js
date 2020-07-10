@@ -25,6 +25,9 @@ function renderDom(vnode, container) {
 
   return dom
 }
+// 创建 Component
+function createComponent(Component, props) {}
+export function renderComponent(Component) {}
 
 export function render(vnode, container) {
   return container.appendChild(renderDom(vnode))
