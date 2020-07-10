@@ -1,24 +1,4 @@
-function render(vnode, container) {
-  if (typeof vnode === 'string') {
-    let textNode = document.createTextNode(vnode)
-    return container.appendChild(textNode)
-  }
-
-  const dom = document.createElement(vnode.tag)
-
-  if (vnode.attrs) {
-    Object.keys(vnode.attrs).forEach((key) => {
-      const value = vnode.attrs[key]
-      setAttribute(dom, key, value)
-    })
-  }
-
-  vnode.children.forEach((child) => render(child, dom))
-
-  return container.appendChild(dom)
-}
-
-function setAttribute(dom, name, value) {
+export function setAttribute(dom, name, value) {
   // 如果属性名是class，则改回className
   if (name === 'className') name = 'class'
 
@@ -49,11 +29,3 @@ function setAttribute(dom, name, value) {
     }
   }
 }
-export const RReactDOM = {
-  render: (vnode, container) => {
-    container.innerHTML = ''
-    return render(vnode, container)
-  },
-}
-
-export default RReactDOM

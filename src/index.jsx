@@ -1,4 +1,4 @@
-import RReact from '../packages/index'
+import RReact from '../packages/react/index'
 import RReactDOM from '../packages/react-dom'
 
 const element = (
