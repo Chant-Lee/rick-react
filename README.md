@@ -123,6 +123,7 @@ console.log( element );
 
 ```
 
+![](./assets/vdom.jpg)
 上述图片记录信息的对象我们就称之为`虚拟 DOM`
 
 #### 第二个小目标 [ReactDOM.render](https://github.com/facebook/react/blob/master/packages/react-dom/src/client/ReactDOMLegacy.js) - **将虚拟 DOM 渲染成真实的 DOM**
