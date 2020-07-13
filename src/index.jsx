@@ -1,11 +1,14 @@
-import RReact, { Component } from '../packages/react/index'
-import RReactDOM from '../packages/react-dom'
+import RReact, { Component } from "../packages/react";
+import RReactDOM from "../packages/react-dom";
+import Counter from "./counter";
 class Hello extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
-    return <h4>Hello, {this.props.name}</h4>
+    return <h4>Hello, {this.props.name}</h4>;
   }
 }
-
 class App extends Component {
   render() {
     return (
@@ -15,9 +18,10 @@ class App extends Component {
         <Hello name="zhangsan" />
         <Hello name="lisi" />
         <Hello name="wanger" />
+        <Counter />
       </div>
-    )
+    );
   }
 }
 
-RReactDOM.render(<App />, document.getElementById('root'))
+RReactDOM.render(<App />, document.getElementById("root"));

@@ -1,13 +1,15 @@
-import { renderComponent } from '../react-dom'
+import { renderComponent } from "../react-dom";
 
 class Component {
   constructor(props = {}) {
-    this.isReactComponent = true
-    this.state = {}
-    this.props = props
+    this.isReactComponent = true;
+    this.state = {};
+    this.props = props;
   }
   setState(stateChange) {
-    Object.assign(this.state, stateChange)
-    renderComponent(this)
+    Object.assign(this.state, stateChange);
+    renderComponent(this);
   }
 }
+
+export default Component;
